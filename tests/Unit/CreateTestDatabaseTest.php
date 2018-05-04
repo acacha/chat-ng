@@ -12,6 +12,8 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
  */
 class CreateTestDatabaseTest extends TestCase
 {
+    use RefreshDatabase;
+
     /** @test */
     public function can_create_test_database()
     {
