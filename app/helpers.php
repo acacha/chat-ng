@@ -4,6 +4,18 @@ use Acacha\User\GuestUser;
 use App\Chat;
 use App\Http\Resources\UserResource;
 use App\User;
+use Carbon\Carbon;
+
+if (!function_exists('create_test_database')) {
+    function create_test_database()
+    {
+        $now = Carbon::now();
+
+        echo $now->format('F'); // July
+        echo $now->subMonth()->format('F'); // June
+    }
+}
+
 
 if (!function_exists('inititalize_test_database')) {
     function inititalize_test_database() {
