@@ -30,6 +30,19 @@
 
                 <div class="direct-chat-contacts">
                     <ul class="contacts-list">
+                        <li>
+                            <a href="#">
+                                <img class="contacts-list-img" src="img/photo1.png" alt="User Image">
+
+                                <div class="contacts-list-info">
+                                <span class="contacts-list-name">
+                                  Usuaris
+                                  <small class="contacts-list-date pull-right">Avui</small>
+                                </span>
+                                    <span class="contacts-list-msg">TODO...</span>
+                                </div>
+                            </a>
+                        </li>
                         <li v-for="participant in participants">
                             <a href="#">
                                 <img class="contacts-list-img" :src="participant.avatar" alt="User Image">
